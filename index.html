@@ -39,143 +39,84 @@
   <script src="script.js"></script>
 </body>
 </html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Countdown Timer</title>
-  
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    body {
-      height: 100vh;
-      background: linear-gradient(145deg, #432371, #f5a36c);
-      background-size: 200% 200%;
-      animation: gradientShift 10s ease infinite;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: 'Segoe UI', sans-serif;
-    }
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(to bottom right, #ffe0f0, #ffd6e0);
+  color: #5a3e4d;
+  text-align: center;
+  padding: 2rem;
+}
 
-    @keyframes gradientShift {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
+header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff80a4;
+  margin-bottom: 2rem;
+}
 
-    .countdown {
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(12px);
-      padding: 50px 70px;
-      border-radius: 24px;
-      text-align: center;
-      color: #fff;
-      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
-    }
+section {
+  margin-bottom: 2.5rem;
+}
 
-    .countdown h1 {
-      font-size: 40px;
-      margin-bottom: 35px;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
+h2 {
+  font-size: 2rem;
+  color: #ff6f9d;
+  margin-bottom: 1rem;
+}
 
-    .timer {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
-    }
+p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
 
-    .time-box {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-    }
+.project {
+  background-color: #fff0f5;
+  border: 2px solid #ffc0cb;
+  border-radius: 15px;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 600px;
+  transition: transform 0.3s;
+}
 
-    .time-value {
-      background: rgba(255, 255, 255, 0.2);
-      backdrop-filter: blur(10px);
-      padding: 20px 30px;
-      border-radius: 16px;
-      font-size: 48px;
-      font-weight: bold;
-      color: #fff;
-      min-width: 80px;
-      text-align: center;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    }
+.project:hover {
+  transform: scale(1.02);
+}
 
-    .time-label {
-      font-size: 16px;
-      color: #ffeef7;
-      letter-spacing: 1px;
-    }
+.project a {
+  color: #ff4d88;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
 
-    @media (max-width: 600px) {
-      .countdown {
-        padding: 30px 20px;
-      }
+.project a:hover {
+  text-decoration: underline;
+}
 
-      .timer {
-        gap: 20px;
-      }
+footer {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #a36a7d;
+}
 
-      .time-value {
-        font-size: 36px;
-        padding: 16px 24px;
-        min-width: 60px;
-      }
+button {
+  background-color: #ffb6c1;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
 
-      .countdown h1 {
-        font-size: 28px;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <div class="countdown">
-    <h1>Countdown Timer</h1>
-    <div class="timer">
-      <div class="time-box">
-        <div class="time-value" id="days">10</div>
-        <div class="time-label">Days</div>
-      </div>
-      <div class="time-box">
-        <div class="time-value" id="hours">12</div> 
-        <div class="time-label">Hours</div>
-      </div>
-      <div class="time-box">
-        <div class="time-value" id="minutes">30</div> 
-        <div class="time-label">Minutes</div>
-      </div>
-      <div class="time-box">
-        <div class="time-value" id="seconds">12</div> 
-        <div class="time-label">Seconds</div>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    
-    function updateStaticTime() {
-      document.getElementById("days").textContent = 10; // Set static value for Days
-      document.getElementById("hours").textContent = 12; // Set static value for Hours
-      document.getElementById("minutes").textContent = 30; // Set static value for Minutes
-      document.getElementById("seconds").textContent = 12; // Set static value for Seconds
-    }
-
-    updateStaticTime(); // Call the function when the page loads to populate the values
-  </script>
-
-</body>
-</html>
-
+button:hover {
+  background-color: #ffa6b9;
+}
