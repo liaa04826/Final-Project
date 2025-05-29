@@ -39,3 +39,143 @@
   <script src="script.js"></script>
 </body>
 </html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Countdown Timer</title>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(145deg, #432371, #f5a36c);
+      background-size: 200% 200%;
+      animation: gradientShift 10s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .countdown {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      padding: 50px 70px;
+      border-radius: 24px;
+      text-align: center;
+      color: #fff;
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .countdown h1 {
+      font-size: 40px;
+      margin-bottom: 35px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .timer {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .time-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .time-value {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      padding: 20px 30px;
+      border-radius: 16px;
+      font-size: 48px;
+      font-weight: bold;
+      color: #fff;
+      min-width: 80px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .time-label {
+      font-size: 16px;
+      color: #ffeef7;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 600px) {
+      .countdown {
+        padding: 30px 20px;
+      }
+
+      .timer {
+        gap: 20px;
+      }
+
+      .time-value {
+        font-size: 36px;
+        padding: 16px 24px;
+        min-width: 60px;
+      }
+
+      .countdown h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="countdown">
+    <h1>Countdown Timer</h1>
+    <div class="timer">
+      <div class="time-box">
+        <div class="time-value" id="days">10</div>
+        <div class="time-label">Days</div>
+      </div>
+      <div class="time-box">
+        <div class="time-value" id="hours">12</div> 
+        <div class="time-label">Hours</div>
+      </div>
+      <div class="time-box">
+        <div class="time-value" id="minutes">30</div> 
+        <div class="time-label">Minutes</div>
+      </div>
+      <div class="time-box">
+        <div class="time-value" id="seconds">12</div> 
+        <div class="time-label">Seconds</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    
+    function updateStaticTime() {
+      document.getElementById("days").textContent = 10; // Set static value for Days
+      document.getElementById("hours").textContent = 12; // Set static value for Hours
+      document.getElementById("minutes").textContent = 30; // Set static value for Minutes
+      document.getElementById("seconds").textContent = 12; // Set static value for Seconds
+    }
+
+    updateStaticTime(); // Call the function when the page loads to populate the values
+  </script>
+
+</body>
+</html>
+
