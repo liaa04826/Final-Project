@@ -53,7 +53,7 @@ A Mario-style jump game where the character avoids oncoming obstacles.
 ## 🔗 Links
 
 - 📁 GitHub Repo: [https://github.com/yourusername/final-project-portfolio](https://github.com/yourusername/final-project-portfolio](https://github.com/liaa04826/Final-Project)  
-- 🌐 Live Website: [https://yourusername.github.io/final-project-portfolio](https://yourusername.github.io/final-project-portfolio)  
+- 🌐 Live Website: [https://yourusername.github.io/final-project-portfolio]([https://yourusername.github.io/final-project-portfolio](https://liaa04826.github.io/Final-Project/))  
 
 ---
 
