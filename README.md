@@ -25,19 +25,19 @@ Here are the interactive JavaScript projects I showcased:
 
 ### ⏱ Countdown Timer  
 A digital countdown timer styled to match my pink theme. Users can set a time and watch the countdown begin.  
-[Live Project](https://yourusername.github.io/final-project-portfolio/game1.html)
+[Live Project]([https://yourusername.github.io/final-project-portfolio/game1.html](https://codepen.io/pen/))
 
 ###  Flappy Bird  
 A Flappy Bird-style game built with JavaScript and canvas, where the player controls a bird avoiding pipes.  
-[Live Project](https://yourusername.github.io/final-project-portfolio/game2.html)
+[Live Project]([https://yourusername.github.io/final-project-portfolio/game2.html](https://codepen.io/pen/))
 
 ### 💬 Motivational Quote Generator  
 Click a button to get a random motivational quote to brighten your day.  
-[Live Project](https://yourusername.github.io/final-project-portfolio/game3.html)
+[Live Project]([https://yourusername.github.io/final-project-portfolio/game3.html](https://codepen.io/pen/))
 
 ### 🏃‍♀️ Run! Jump!  
 A Mario-style jump game where the character avoids oncoming obstacles.  
-[Live Project](https://yourusername.github.io/final-project-portfolio/game4.html)
+[Live Project]([https://yourusername.github.io/final-project-portfolio/game4.html](https://codepen.io/pen/))
 
 ---
 
