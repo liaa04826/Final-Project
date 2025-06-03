@@ -1,0 +1,109 @@
+<html>
+<head>
+    <title>Quote Generator</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif; 
+            background-image: url("https://st2.depositphotos.com/1757635/5948/i/450/depositphotos_59482257-stock-photo-woman-on-beautiful-sunset.jpg");
+            background-size: cover;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+        }
+
+        h1 {
+            color: #03071e;
+        }
+
+        .message-el {
+            font-family: Georgia, serif; 
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .quotes-el {
+            font-size: 18px;
+            font-style: italic;
+            min-height: 30px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            color: #03071e;
+            width: 150px;
+            background: #6d597a; 
+            padding: 10px;
+            font-weight: bold;
+            border: line;
+            border-radius: 5px;
+            margin: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background: pink;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1>Generate A Quote</h1>
+
+    <p class="message-el">Motivational</p>
+    <p class="cards-el"></p>
+    <button onclick="generateQuote('motivational')">Generate</button>
+
+    <p class="message-el">Inspirational</p>
+    <p class="cards-el"></p>
+    <button onclick="generateQuote('inspirational')">Generate</button>
+
+    <p class="message-el">Silly</p>
+    <p class="cards-el"></p>
+    <button onclick="generateQuote('silly')">Generate</button>
+
+    <script>
+        const quotes = {
+            motivational: [
+                "Believe in yourself!",
+                "Push yourself to the fullest, because you know dam well no one else can",
+                "Dream big and those dreams will be big in your future",
+                "Get up everyday with a smile, go to sleep witha smile. You made it through another day.",
+                "You are someones happiness."
+            ],
+            inspirational: [
+                "The best way to predict the future is to create it.",
+                "Difficulties in life are intended to make us better, not bitter.",
+                "Act as if what you do makes a difference. It does.",
+                "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+                "Happiness depends upon ourselves."
+            ],
+            silly: [
+                "Drink water? Water is for fishes!",
+                "Vale Mas Que te Pasives EHH",
+                "You wanna know how it smells, ask santos! He knows it smells well!",
+                "My favorite! Bean dip and hot cheetos!!",
+                "Why don’t eggs tell jokes? Because they might crack up!"
+            ]
+        };
+
+        function generateQuote(category) {
+            let categoryQuotes = quotes[category];  
+            let randomIndex = Math.floor(Math.random() * categoryQuotes.length);  
+            let quote = categoryQuotes[randomIndex];
+
+            let messageElements = document.querySelectorAll(".message-el");
+            let cardsElements = document.querySelectorAll(".cards-el");
+
+            for (let i = 0; i < messageElements.length; i++) {
+                if (messageElements[i].textContent.toLowerCase() === category) {
+                    cardsElements[i].textContent = `"${quote}"`;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
+
+
